@@ -75,3 +75,22 @@ if pts > 170:
     print(f'tendran una multa del 50% y perdera {perder}')
 if pts < 170:
     print('no perdera nada')
+
+"""
+Una persona se encuentra con un problema de comprar un automóvil
+o un terreno, los cuales cuestan exactamente lo mismo. Sabe que
+mientras el automóvil se devalúa, con el terreno sucede lo contrario.
+Esta persona comprará el automóvil si al cabo de tres años la
+devaluación de este no es mayor que la mitad del incremento del valor del terreno. Ayúdale a esta pesona a determinar si debe o no
+comprar el automóvil.
+"""
+precio = float(input('Ingrese el valor del automovil y del terreno : '))
+terre = float(input('Ingrese el incremento anual del terreno % :'))
+auto = float(input('Ingrese el valor de la devaluacion anual del automovil % :'))
+
+terre = (((precio * terre)/100)*3)/2
+auto = ((precio * auto)/100)*3
+if auto < terre:
+    print('te conviene el automovil')
+else:
+    print('te conviene el terreno')

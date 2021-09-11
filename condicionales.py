@@ -149,7 +149,33 @@ if valor >= 2000:
         d = valor * 10/100
         v1 = valor - d
    
-        
-
+"""
+Una empresa quiere hacer una compra de varias piezas de la misma
+clase a una fábrica de refacciones. La empresa, dependiendo del
+monto total de la compra, decidirá que hacer para pagar al fabricante.
+Si el monto total de la compra excede de $500.000 la empresa tendrá
+la capacidad de invertir de su propio dinero un 55% del monto de la
+compra, pedir prestado al banco un 30% y el resto lo pagará
+solicitando un crédito al fabricante. Si el monto total de la compra no
+excede de $500.00 la empresa tendrá capacidad de invertir de su
+propio dinero un 70% y el restante 30% lo pagará solicitando crédito
+al fabricante. El fabricante cobra por concepto de interes un 20%
+sobre la cantidad que se le pague a crédito. Obtener la cantidad a
+inverir, valor del préstamo, valor del crédito y los intereses.
+"""
+pieza = int(input('ingrese el numero de piezas que comprara: '))
+costo = float(input('ingrese el costos de las piezas: '))
+total = pieza * costo
+if total > 500000:
+    inv = total * 0.55
+    prt = total * 0.30
+    crd = total * 0.15
+else:
+    inv = total * 0.70
+    prt = 0
+    crd = total * 0.30
+interes =  crd *0.20
+print(f'invertir {inv}, prestamo {prt}, creditos {crd} y el interes es {interes}')
+    
         
     

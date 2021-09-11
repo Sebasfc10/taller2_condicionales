@@ -123,3 +123,33 @@ if cant >= 10:
     pc1 = pc * 40/100
     pagar = pc + pc1
     print(f'el valor final a pagar es {pc} con descuento del 40%')
+    
+"""
+Un proveedor de estéreos ofrece un descuento del 10% sobre el
+precio sin IVA, de algún aparato si este cuesta $2000 o más. Además,
+independientemente de esto, ofrece un 5% de descuento si la marca
+es NOSY. Determinar cuanto pagará, con IVA incluido, un cliente
+cualquiera por la compra de su aparato. IVA es del 16%.
+"""
+valor = float(input('ingrese el valor del producto: '))
+m = str(input('ingrese la marca en mayuscula: '))
+i = valor *16/100
+iva = valor + i
+
+if valor >= 2000:
+    if m == 'NOSY': 
+        d = valor * 10/100
+        v1 = valor - d
+        v = v1 * 5/100
+        v2= v1 - v
+        final = v2 - i
+        print(f'el valor final a pagar es de {final} si su compra es mayor de $2000')
+    else:
+        print(f'no es de marca favorita')
+        d = valor * 10/100
+        v1 = valor - d
+   
+        
+
+        
+    

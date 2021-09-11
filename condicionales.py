@@ -177,5 +177,19 @@ else:
 interes =  crd *0.20
 print(f'invertir {inv}, prestamo {prt}, creditos {crd} y el interes es {interes}')
     
-        
+"""
+Leer 2 números; si son iguales que lo multiplique, si el primero es
+mayor que el segundo que los reste y sino que los sume
+"""
+num1 = int(input('ingrese el primer numero: '))
+num2 = int(input('ingrese el segundo numero: '))
+if num1 == num2:
+    mul = num1 * num2
+    print(f'se multiplicaron y dio {mul}')
+if num1 > num2:
+    res = num1 - num2
+    print(f'se restaron y dio {res}')
+else:
+    suma = num1 + num2
+    print(f'se sumaron y dio {suma}')
     

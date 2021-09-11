@@ -94,3 +94,32 @@ if auto < terre:
     print('te conviene el automovil')
 else:
     print('te conviene el terreno')
+    
+    
+"""
+En una fábrica de computadoras se planea ofrecer a los clientes un
+descuento que dependerá del número de computadoreas que
+compre. Si las computadoras son menos de cinco se les dará un 10%
+de descuento sobre el total de la compra; si el número de
+computadoras es mayor o igual a cinco pero menos de diez se le
+otorga un 20% de descuento; y si son 10 o más se les da un 40%. El
+precio de cada computadora es de $11.000
+"""
+
+cant = int(input('ingrese el numero de computadoras que comprara: '))
+pc = 11000
+if cant < 5:
+    pc = pc * cant 
+    pc1 = pc * 10/100
+    pagar = pc + pc1
+    print(f'el valor final a pagar es {pc} con descuento del 10%')
+if cant >= 5 and cant < 10:
+    pc = pc * cant
+    pc1 = pc * 20/100
+    pagar = pc + pc1
+    print(f'el valor final a pagar es {pc} con descuento del 20%')
+if cant >= 10:
+    pc = pc *cant 
+    pc1 = pc * 40/100
+    pagar = pc + pc1
+    print(f'el valor final a pagar es {pc} con descuento del 40%')

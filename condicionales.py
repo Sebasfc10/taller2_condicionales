@@ -52,4 +52,26 @@ if cuota <= 50000:
 if cuota > 50000:
     f = cuota * 2/100
     cf = cuota + f
-    print(f'la cuota final a pagar es de {cf} con una fuianza del 2%')
+    print(f'la cuota final a pagar es de {cf} con una fianza del 2%')
+    
+"""
+Una fábrica ha sido sometida a un programa de control de
+contaminación para lo cual se efectúa una revisión de los puntos de
+contaminación generados por la fábrica. El programa de control de
+contaminación consiste en medir los puntos que emite la fábrica en
+cinco días de una semana y si el promedio es superior a los 170
+puntos entonces tendrá la sanción de parar su producción por una
+semana y una multa del 50% de las ganancias diarias cuando no se
+detiene la producción. Si el promedio obtenido de puntos es de 170 o
+menos entonces no tendrá ni sanción ni multa. El dueño de la fábrica
+desea saber cuanto dinero perderá después de ser sometido a la
+revisión.
+"""
+pts = int(input('ingrese los puntos de la revision: '))
+dinero = float(input('ingrese el dinero ganado en la produccion: '))
+if pts > 170:
+    d = dinero * 50/100
+    perder = dinero - d
+    print(f'tendran una multa del 50% y perdera {perder}')
+if pts < 170:
+    print('no perdera nada')
